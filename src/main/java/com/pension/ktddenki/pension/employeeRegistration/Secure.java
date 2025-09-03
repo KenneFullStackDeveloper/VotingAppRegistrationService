@@ -93,7 +93,7 @@ public class Secure {
     @Bean
     UrlBasedCorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:5174","http://localhost:5173","http://localhost:5175"));
+        configuration.setAllowedOrigins(Arrays.asList("http://localhost:5174","http://localhost:5173","http://localhost:5175", "http://frontend:80"));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(Arrays.asList("*"));
         configuration.setExposedHeaders(Arrays.asList("Authorization"));
