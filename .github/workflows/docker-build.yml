@@ -36,7 +36,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
             context: .
-            push: false
+            push: true
             tags: kennetchofo/registration-votingapp-service:${{ github.sha }}
 
 
@@ -49,7 +49,7 @@ jobs:
                 docker run -d --name voting-app-registration kennetchofo/registration-votingapp-service:${{ github.sha }}
                 
                 echo "📄 Logs du container :"
-                docker logs votingApp
+                docker logs voting-app-registration
                 
                 echo "🧹 Nettoyage du container"
                 docker stop voting-app-registration
