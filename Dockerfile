@@ -1,4 +1,4 @@
-FROM openjdk:25-jdk-slim
+FROM openjdk:24-jdk-slim
 
 COPY target/*.jar  registrationservice.jar
 
