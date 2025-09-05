@@ -94,12 +94,12 @@ public class Secure {
     UrlBasedCorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(Arrays.asList(
-                "http:localhost:8081",
+                "https://04db0fc3460e.ngrok-free.app",
                 "http:localhost:80",
                 "http://localhost:5174",
                 "http://localhost:5173",
                 "http://localhost:5175",
-                "http://192.168.178.194"
+                "http://192.168.178.29"
         ));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(Arrays.asList("*"));
